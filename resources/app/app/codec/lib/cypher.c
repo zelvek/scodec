@@ -9,7 +9,7 @@
 #include "../header/utility.h"
 #include "../header/conversion.h"
 
-pthread_t threadsList[8];
+extern pthread_t threadsList[MAX_THREADS];
 
 void *cypherChunk(void *_args){
     ThreadArgs *args = (ThreadArgs *)_args;
