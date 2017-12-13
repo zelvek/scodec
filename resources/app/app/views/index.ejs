@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body>
+    <section id="main-container">
+        <div id="loading-screen-container">
+          <div id="loading-animation-container">
+            <p id="loading-caption"></p>
+            <p id="success-caption">Success</p>
+          </div>
+        </div>
+      <div id="top-container">
+        <div id="button-container">
+          <span class="top-button" id="minimize"></span>
+          <span class="top-button" id="quit"></span>
+        </div>
+      </div>
+      <div id="progress-container">
+        <div class="tile" id="key">
+          <div class="icon-container dashed dropzone" id="key-dropzone">
+            <div id="key-background" class="icon-background">
+              <i class="material-icons dropzone-icon" id="key-icon">vpn_key</i>
+              <!--<i class="material-icons add-icon">add</i>-->
+            </div>
+          </div>
+          <div class="button" id="key-button">
+            Ajouter une clef
+          </div>
+          <!-- change -->
+        </div>
+        <div class="linker-container">
+          <div id="first-linker" class="linker linker-disabled"></div>
+        </div>
+        <div class="tile" id="file">
+          <div class="icon-container dashed border-disabled dropzone" id="file-dropzone">
+            <div id="file-background" class="icon-background">
+              <i class="material-icons dropzone-icon icon-disabled" id="file-icon">insert_drive_file</i>
+              <!--<i class="material-icons add-icon icon-disabled">add</i>-->
+            </div>
+          </div>
+          <div class="button background-disabled" id="file-button">
+            Choisir un fichier
+          </div>
+          <!-- change -->
+        </div>
+        <div class="linker-container">
+          <div id="last-linker" class="linker linker-disabled"></div>
+        </div>
+        <div class="split-tile" id="split">
+            <span class="split-line linker-disabled"></span>
+            <span class="dot background-disabled"></span>
+            <span class="split-line linker-disabled"></span>
+        </div>
+
+        <div class="dual-tile" id="split">
+          <div class="tile" id="cypher">
+            <div class="icon-container">
+              <i class="material-icons dual-tile-icon icon-disabled" id="lock-icon">lock_outline</i>
+            </div>
+            <!-- change -->
+          </div>
+          <div class="tile" id="decypher">
+            <div class="icon-container">
+              <i class="material-icons dual-tile-icon icon-disabled" id="lock-open-icon">lock_open</i>
+            </div>
+            <!-- change -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom-container">
+      <span id="md5-container">MD5 : <span id="md5-string"> - </span></span>
+    </section>
+
+    <% include footer.ejs %>
+  </body>
+</html>

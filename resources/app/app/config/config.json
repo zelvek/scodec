@@ -1,0 +1,10 @@
+{
+  "server": {
+		"host": "localhost",
+		"port": 4444
+	},
+    "const":{
+        "keyMode": 1,
+        "fileMode": 2
+    }
+}
